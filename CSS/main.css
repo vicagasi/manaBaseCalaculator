@@ -2,3 +2,83 @@ body {
     background-color: black;
     color: whitesmoke;
 }
+
+main {
+    display: flex;
+    height: 80%;
+    width: 95%;
+    margin: 2%;
+    padding: 3%;
+}
+
+.landSection{
+    width: 25%;
+    margin: 1%;
+}
+
+.inputSection {
+    width: 75%;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputSection div {
+    display: flex;
+    flex-direction: row-reverse;
+
+    width: 30%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 3%;
+}
+
+.inputSection div img {
+    width: 45%;
+    height: 95%;
+    margin: 1%;
+}
+
+.inputSection div input {
+    width: 45%;
+    height: 95%;
+    margin: 1%;
+    font-size: 5em;
+    text-align: center;
+}
+
+.rSec {
+    background-color: #E83A14;
+    border: solid;
+    border-color: #890F0D;
+}
+
+.uSec {
+    background-color: #5BC0F8;
+    border: solid;
+    border-color: #0081C9;
+}
+
+.wSec {
+    background-color: #FEF9A7;
+    border: solid;
+    border-color: #FAC213;
+}
+
+.bSec {
+    background-color: #624F82;
+    border: solid;
+    border-color: #3F3B6C;
+}
+
+.gSec {
+    background-color: #7DCE13;
+    border: solid;
+    border-color: #5BB318;
+}
+
+.cSec {
+    background-color: #7B8FA1;
+    border: solid;
+    border-color:#567189;
+}
