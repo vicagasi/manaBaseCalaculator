@@ -10,7 +10,7 @@ function calcAll(){
 }
 
 function determineLands(lands, red, blue, black, white, green){
-    let totalColor = red + blue + black + white + green;
+    let totalColor = parseInt(red) + parseInt(blue) + parseInt(black) + parseInt(white) + parseInt(green);
     let redOut = landForColor(lands, red, totalColor);
     let blueOut = landForColor(lands, blue, totalColor);
     let blackOut = landForColor(lands, black, totalColor);
@@ -21,16 +21,18 @@ function determineLands(lands, red, blue, black, white, green){
 
 // Set divs to display the calculations
 function setOutput(red, blue, black, white, green){
-    document.getElementById("rOut").value = red;
-    document.getElementById("uOut").value = blue;
-    document.getElementById("bOut").value = black;
-    document.getElementById("wOut").value = white;
-    document.getElementById("gOut").value = green;
+    document.getElementById("rOut").innerHTML = red;
+    document.getElementById("uOut").innerHTML = blue;
+    document.getElementById("bOut").innerHTML = black;
+    document.getElementById("wOut").innerHTML = white;
+    document.getElementById("gOut").innerHTML = green;
 }
 
 // Returns the amount of lands for a specific color
 function landForColor(lands, currColor, totalColor) {
     let percentage = currColor / totalColor;
+    console.log(percentage)
     let output = lands * percentage;
-    return Math.round(output);
+    console.log(output)
+    return output;
 }
