@@ -1,3 +1,7 @@
+// Have output update when values are changed in the input secition's inputs
+document.querySelectorAll('.input').forEach(input => {
+    input.addEventListener("change", calcAll);
+  })
 
 function calcAll(){
     l = document.getElementById('land').value;
@@ -6,8 +10,8 @@ function calcAll(){
     b = document.getElementById('black').value;
     w = document.getElementById('white').value;
     g = document.getElementById('green').value;
-    c = document.getElementById('green').value;
-    determineLands(l,r,u,b,w,g, c);
+    c = document.getElementById('colorless').value;
+    determineLands(l,r,u,b,w,g,c);
 }
 
 function determineLands(lands, red, blue, black, white, green, colorless){
