@@ -39,7 +39,7 @@ function setOutput(red, blue, black, white, green, colorless){
 function landForColor(lands, currColor, totalColor) {
     let percentage = currColor / totalColor;
     console.log(percentage)
-    let output = lands * percentage;
+    let output = Math.round(lands * percentage);
     console.log(output)
     return output;
 }
