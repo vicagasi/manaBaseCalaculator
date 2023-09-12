@@ -1,5 +1,6 @@
 html {
-    background: url("/IMG/blightstep.jpg") no-repeat center center fixed;
+    background: url("blightstep.jpg") no-repeat center center fixed;
+    background-color: rgb(21, 39, 59);
     background-size: cover;
 }
 
@@ -21,17 +22,18 @@ main {
     width: 87%;
     margin: 1%;
     padding: 2%;
-    border-radius: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 
 .landSection input {
     width: 97%;
     font-size: 4em;
     text-align: center;
+    opacity: 100%;
 }
 
 .inputSection {
@@ -40,6 +42,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
+    opacity: 90%;
 }
 
 .inputSection div {
@@ -49,13 +52,13 @@ main {
     width: 42%;
     padding: 1%;
     margin: 1%;
-    border-radius: 3%;
 }
 
 .inputSection div img {
     width: 45%;
     height: 95%;
     margin: 1%;
+    opacity: 100%;
 }
 
 .inputSection div input {
@@ -66,6 +69,7 @@ main {
     text-align: center;
     border: solid;
     border-color: gainsboro;
+    opacity: 100%;
 }
 
 .outSection {
@@ -74,6 +78,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
+    opacity: 90%;
 }
 
 .outSection div {
@@ -91,6 +96,7 @@ main {
     border-color: gainsboro;
     color: black;
     margin: 0%;
+    opacity: 100%;
 }
 
 #lSec {
@@ -143,6 +149,5 @@ main {
         width: 25%;
         padding: 1%;
         margin: 1%;
-        border-radius: 3%;
     }
 }
